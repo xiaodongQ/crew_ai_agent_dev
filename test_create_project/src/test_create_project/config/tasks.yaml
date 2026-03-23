@@ -1,17 +1,56 @@
-research_task:
+wechat_strategy_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is {current_year}.
+    针对人工智能技术主题，制定详细的微信平台运营策略。
+    分析微信生态特点，包括公众号、视频号、朋友圈等渠道，
+    设计适合微信用户的内容形式、发布频率、互动方式，
+    并提供具体的标题、封面图和内容框架建议。
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+    一份完整的微信平台运营策略报告，包含：
+    1. 微信生态分析（公众号、视频号、朋友圈）
+    2. 内容策略（选题方向、内容形式、发布计划）
+    3. 互动策略（用户增长、粉丝维护、社群运营）
+    4. 具体执行建议（标题模板、封面设计、内容框架）
+  agent: wechat_specialist
+
+xiaohongshu_strategy_task:
+  description: >
+    针对人工智能技术主题，制定详细的小红书平台运营策略。
+    分析小红书社区特点和用户画像，设计适合小红书的内容形式，
+    包括图文搭配、标签策略、关键词布局，
+    提供爆款内容创作技巧和KOL合作建议。
+  expected_output: >
+    一份完整的小红书平台运营策略报告，包含：
+    1. 小红书生态分析（用户画像、内容偏好、算法机制）
+    2. 内容策略（笔记类型、视觉风格、发布节奏）
+    3. 推广策略（关键词布局、话题选择、KOL合作）
+    4. 具体执行建议（标题模板、图片风格、内容框架）
+  agent: xiaohongshu_specialist
+
+douyin_strategy_task:
+  description: >
+    针对人工智能技术主题，制定详细的抖音平台运营策略。
+    分析抖音用户行为和算法机制，设计适合抖音的短视频内容，
+    包括视频创意、音乐选择、话题运营，
+    提供爆款视频制作技巧和流量获取策略。
+  expected_output: >
+    一份完整的抖音平台运营策略报告，包含：
+    1. 抖音生态分析（用户特征、算法机制、热门趋势）
+    2. 内容策略（视频类型、创意方向、制作技巧）
+    3. 运营策略（发布时机、互动方式、涨粉策略）
+    4. 具体执行建议（脚本模板、音乐选择、话题标签）
+  agent: douyin_specialist
 
 reporting_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    综合各平台运营策略，生成一份全面的技术自媒体运营报告。
+    对比分析微信、小红书、抖音三大平台的特点和优势，
+    提供跨平台协同运营建议，
+    制定整体运营规划和执行时间表。
   expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
+    一份全面的技术自媒体运营报告，包含：
+    1. 各平台对比分析（优劣势、适用场景、用户特征）
+    2. 跨平台协同策略（内容分发、用户引流、品牌统一）
+    3. 整体运营规划（阶段目标、资源配置、效果评估）
+    4. 可执行的时间表和行动方案
+    5. 风险提示和应对措施
   agent: reporting_analyst
