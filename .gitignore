@@ -24,4 +24,5 @@ env/
 # 生成的输出文件
 *.md
 !README.md
+!social_media_report.md
 !CONFIG.md
